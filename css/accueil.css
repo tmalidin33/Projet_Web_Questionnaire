@@ -1,0 +1,68 @@
+@media (max-width: 544px) {  
+  .connexionInMenu h2{font-size: 1.0rem !important;}
+}
+/* ANIMATIONS */
+@keyframes goToRight{
+	from{margin-left: 5%;}
+	to{margin-left: 20%; opacity: 0;}
+}
+
+
+/* PAGE BIENVENUE */
+IMG.displayed {
+	width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+.compteur{
+	font-size: 25px;
+}
+
+
+/* CONNEXION DANS LE MENU*/
+.connexionInMenu{
+	color: var(--blue-color);
+	padding: 1%;
+	text-align: center;
+}
+.connexionInMenu form,
+.connexionInMenu table,
+.connexionInMenu input[type=text],
+.connexionInMenu input[type=password]{
+	padding: 3%;
+	width: 100%;
+	margin: 5px 0;
+}
+.connexionInMenu input[type=submit]{
+	padding: 2% 3%;
+	background-color: transparent;
+	color: var(--blue-color);
+	border: 2px solid var(--blue-color);
+	transition: 0.3s;
+}
+.connexionInMenu input[type=submit]:hover{
+	background-color: var(--yellow-color);
+	border-color: var(--yellow-color);
+}
+.error{
+	color: red;
+}
+
+
+
+
+
+/* INSCRIPTION CSS */
+.inscription input[type=radio],
+.inscription input[type=checkbox]{
+	width: auto;
+	margin: 8px;
+}
+.inscription{
+	padding: 3%;
+	margin: auto;
+}
+.enseignant{
+	display:none;
+}

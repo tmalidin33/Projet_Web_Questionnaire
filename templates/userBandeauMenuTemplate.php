@@ -1,0 +1,1 @@
+<i id="bienvenue">Bonjour <?php echo $this->args['user']->prenom() ?></i>

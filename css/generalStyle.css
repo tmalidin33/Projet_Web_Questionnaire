@@ -1,0 +1,195 @@
+/* VARIABLES CSS */
+
+:root {
+	--blue-color: #383549;
+	--blue-tr-color: rgba(56, 53, 73, 0.6);
+	--grey-color: #cac6bd;
+	--yellow-color: #E8D6A7;
+	--orange-color: #EFA267;
+	--green-color: #7CB588;
+}
+
+@media (max-width: 544px) {  
+  *{font-size:0.7rem;} /*1rem = 16px*/
+  .menu a li{font-size: 0.8rem !important; padding: 5px 5px 5px 20px !important;}
+  .bandeauMenu i{font-size: 0.9rem !important;}
+  .menu .closebtn{font-size: 1.0rem !important;margin-top: 20px;}
+}
+
+/* DEBUG */
+pre{
+	background: lightgrey;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+/* ANIMATION */
+@keyframes comesFromRight{
+	from{padding-left: 25%; opacity: 0;}
+	to{padding-left: 5%; opacity: 1;}
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+#body{
+	background-color: transparent;
+}
+html{
+	font-family: Helvetica, sans-serif;
+	/*mur géométrique*/
+	/*background: url("https://images.pexels.com/photos/593158/pexels-photo-593158.jpeg?cs=srgb&dl=abstract-architecture-building-exterior-593158.jpg&fm=jpg");*/
+	/*foret*/
+	/*background: url("https://images.pexels.com/photos/831243/pexels-photo-831243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");*/
+	/*chaise*/
+	/*background: url("https://images.pexels.com/photos/696407/pexels-photo-696407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-position: bottom;*/
+	/*carte monde*/
+	/*background: url("https://images.pexels.com/photos/592753/pexels-photo-592753.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");*/
+	/*etoiles*/
+	background: url("https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	/*flou lumière*/
+	/*background: url("https://images.pexels.com/photos/376533/pexels-photo-376533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");*/
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: repeat-y;
+}
+header{
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	/*background-color: var(--blue-tr-color);*/
+}
+
+
+
+
+/* BANDEAU MENU CSS */
+.bandeauMenu{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	top:0;
+	position: sticky;
+	font-size: 30px;
+	color: white;
+	background-color: var(--blue-color);
+	/*border-bottom: 2px solid var(--yellow-color);*/
+	z-index: 10000;
+}
+.bandeauMenu span, .bandeauMenu div a{
+	padding: 10px;
+}
+.bandeauMenu span{
+	cursor: pointer;
+	float: left;
+	transition: 0.3s;
+}
+.bandeauMenu span:hover{
+	background-color: var(--yellow-color);
+	color: black;
+}
+.bandeauMenu div{
+	float: right;
+}
+.bandeauMenu div a{
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	transition: 0.3s;
+}
+.bandeauMenu div a:hover{
+	background-color: var(--yellow-color);
+	color: black;
+}
+.bandeauMenu i{
+	font-size: 15px;
+	margin-left: 10%;
+	bottom: 5px;
+	position: absolute;
+	text-align: center;
+	float: left;
+}
+.foot-menu{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	font-size: 15px;
+}
+
+
+
+
+
+/* MENU GAUCHE CSS*/
+.menu{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 10001;
+	top: 0;
+	left: 0;
+	background-color: var(--grey-color);
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	padding-inline-start: 0;
+}
+.menu a:hover{
+	text-decoration: none;
+}
+
+.menu a li{
+	padding: 8px 8px 8px 32px;
+	font-size: 25px;
+	color: var(--blue-color);
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	transition: 0.3s;
+}
+.menu a li:hover{
+	background-color: var(--yellow-color);
+	color: white;
+}
+.menu .closebtn{
+	color: var(--blue-color);
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+.menu .closebtn{
+	transition: 0.4s;
+}
+.menu .closebtn:hover{
+	color: white;
+}
+#selected-element li{
+	background-color: var(--yellow-color);
+}
+
+
+
+
+
+
+/* CONTENT CSS */
+.content{
+	text-align: center;
+	padding: 3%;
+	color: white;
+	animation-name: comesFromRight;
+	animation-duration: 0.3s;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.content .panel-body{
+	color: black;
+}

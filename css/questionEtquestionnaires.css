@@ -1,0 +1,152 @@
+@media (max-width: 544px) {
+  .enteteQuestion{padding: 5px!important;}
+  .enteteQuestion h4{font-size: 1.0rem;}
+}
+
+/* FORMULAIRE NOUVEAU QUESTIONNAIRE NOUVELLE QUESTION  */
+.newQuestionnaire, .newQuestion{
+	font-family: 'Open Sans Condensed', arial, sans;
+	padding: 20px;
+	width: 75%;
+	color: black;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+.newQuestionnaire{
+	margin: 50px auto;
+}
+.newQuestion{
+	margin: 20px auto;
+}
+
+
+
+#date{
+	width: 50%;
+}
+.newQuestionnaire td, .newQuestion td{
+	padding: 0px;
+	margin-right: 10px;
+}
+.newQuestionnaire select, .newQuestion select{
+	margin: 10px;
+}
+
+
+.newQuestionnaire input[type="text"]:focus, .newQuestion input[type="text"]:focus,
+.newQuestionnaire input[type="email"]:focus, .newQuestion input[type="email"]:focus,
+.newQuestionnaire input[type="password"]:focus, .newQuestion input[type="password"]:focus,
+.newQuestionnaire input[type="date"]:focus, .newQuestion input[type="date"]:focus,
+.newQuestionnaire input[type="datetime"]:focus, .newQuestion input[type="datetime"]:focus,
+.newQuestionnaire input[type="time"]:focus, .newQuestion input[type="time"]:focus,
+.newQuestionnaire select:focus, .newQuestion select:focus,
+.newQuestionnaire textarea:focus, .newQuestion textarea:focus{
+	border: 3px solid #555;
+}
+
+.newQuestionnaire input[type="text"], .newQuestion input[type="text"],
+.newQuestionnaire input[type="email"], .newQuestion input[type="email"],
+.newQuestionnaire input[type="number"], .newQuestion input[type="number"],
+.newQuestionnaire input[type="search"], .newQuestion input[type="search"],
+.newQuestionnaire input[type="url"], .newQuestion input[type="url"],
+.newQuestionnaire input[type="password"], .newQuestion input[type="password"],
+.newQuestionnaire textarea, .newQuestion textarea,
+.newQuestionnaire input[type="time"], .newQuestion input[type="time"],
+.newQuestionnaire input[type="date"], .newQuestion input[type="date"],
+.newQuestionnaire input[type="datetime"], .newQuestion input[type="datetime"],
+.newQuestionnaire select, .newQuestion select
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	background: transparent;
+	margin: 5px 0px 10px 0px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+}
+.newQuestionnaire textarea, .newQuestion textarea{
+	resize:none;
+	overflow: hidden;
+	height: 40px;
+  overflow-y: scroll;
+}
+.newQuestionnaire input[type="button"], .newQuestion input[type="button"],
+.newQuestionnaire input[type="submit"], .newQuestion input[type="submit"]{
+	-moz-box-shadow: inset 0px 1px 0px 0px var(--orange-color);
+	-webkit-box-shadow: inset 0px 1px 0px 0px var(--orange-color);
+	box-shadow: inset 0px 1px 0px 0px var(--orange-color);
+	background-color: var(--orange-color);
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	padding: 8px 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+.newQuestionnaire input[type="button"]:hover, .newQuestion input[type="button"]:hover,
+.newQuestionnaire input[type="submit"]:hover, .newQuestion input[type="submit"]:hover {
+	opacity: 0.7;
+}
+.entete{
+	background: #4D4D4D;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #797979;
+	font-size: 10px;
+	font-weight: 100;
+	padding: 5px;
+	margin: -20px -20px 20px -20px;
+}
+.entete h2{
+	margin:auto;
+}
+.titre, .promos, .dateTime{
+  padding: 5px;
+  border-bottom: 3px solid #ccc;
+}
+.dateTime{
+  border:none;
+}
+
+.unQuestionnaire{
+	background-color: var(--blue-color);
+	border: 3px solid var(--blue-color);
+	transition: 0.3s;
+	font-weight: normal;
+}
+.unQuestionnaire:hover{
+	border-color: var(--yellow-color);
+}
+.separtionDansQuesitonnaire{
+  padding: 5px;
+  border-bottom: 3px solid #888;
+}
+#ancienneQuestion .closebtn{
+	font-size: 25px;
+	color: white;
+}
+#ancienneQuestion .closebtn:hover{
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+
+/*	AFFICHAGE QUESTION AVEC REPONSES 	*/
+.enteteQuestion{
+	background-color: var(--blue-color);
+	padding: 20px
+}
+#resultatEleve:hover{
+  background-color: #4445;
+  cursor:pointer;
+}
